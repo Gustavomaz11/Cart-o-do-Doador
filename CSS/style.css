@@ -16,3 +16,7 @@
     bottom: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: var(--fonte-principal);
+}
