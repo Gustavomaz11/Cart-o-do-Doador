@@ -181,7 +181,7 @@ section:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -194,7 +194,7 @@ section:hover {
     .blood-stock {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+} */
 
 .slideShow {
     position: relative;
