@@ -2,27 +2,31 @@
 const currentPage = window.location.pathname.split("/").pop();
 
 // Definindo os botões com base na página
-let entrar, registro;
+let entrar, registro, esqueceuSenha;
 
 // Atribuindo botões de acordo com a página
 if (currentPage === 'index.html' || currentPage === '') {
     entrar = document.querySelector('#entrar');  // Botão de acessar (navega para 'index.html')
     registro = document.querySelector('#registro');  // Botão de registro (navega para 'cadastroUsuario.html')
+    esqueceuSenha = document.querySelector('#esqueceuSenha');  // Botão de "Esqueceu a Senha"
 } else if (currentPage === 'cadastroUsuario.html') {
     entrar = document.querySelector('#entrar');  // Botão de acessar (navega para 'index.html')
     registro = document.querySelector('#registro');  // Botão de registro (navega para 'cadastroUsuario.html')
+} else if (currentPage === 'esqueceuSenha.html') {
+    entrar = document.querySelector('#entrar');  // Botão de acessar (navega para 'index.html')
 }
 
 // Definindo as URLs para redirecionamento
 const urls = {
     index: 'index.html',
-    cadastro: 'cadastroUsuario.html'
+    cadastro: 'cadastroUsuario.html',
+    esqueceuSenha: 'esqueceuSenha.html'
 };
 
 // Adiciona o evento de clique para o botão 'Acessar'
 if (entrar) {
     entrar.addEventListener('click', () => {
-        if (currentPage === 'cadastroUsuario.html') {
+        if (currentPage === 'cadastroUsuario.html' || currentPage === 'esqueceuSenha.html') {
             window.location.href = urls.index; // Redireciona para o index.html
         }
     });
@@ -36,6 +40,16 @@ if (registro) {
         }
     });
 }
+
+// Adiciona o evento de clique para o botão 'Esqueceu a Senha'
+if (esqueceuSenha) {
+    esqueceuSenha.addEventListener('click', () => {
+        if (currentPage === 'index.html' || currentPage === '') {
+            window.location.href = urls.esqueceuSenha; // Redireciona para o esqueceuSenha.html
+        }
+    });
+}
+
 
 
 particlesJS('particles-js', {

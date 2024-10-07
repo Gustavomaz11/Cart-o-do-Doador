@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartão do Doador | HEMOSE</title>
-    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Cartão do Doador | Hemose</title>
     <script src="../JS/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
     <div id="particles-js"></div>
@@ -15,21 +15,18 @@
     </header>
     <main>
         <form>
-            <legend>Cartão do Doador</legend>
+            <legend>Esqueceu sua Senha?</legend>
             <div class="formGroup">
                 <label for="cpf">CPF</label>
                 <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" maxlength="14" oninput="mascaraCPF(this)">
             </div>
             <div class="formGroup">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email cadastrado">
             </div>
             <div class="formGroup">
-                <span id="esqueceuSenha">Esqueci minha Senha</span>
-            </div>
-            <div class="formGroup">
-                <button>Acessar</button>
-                <h5>Caso não tenha acesso <span id="registro">Registre-se</span></h5>
+                <button>Recuperar</button>
+                <h5>Lembrou da senha? <span id="entrar">Entrar</span></h5>
             </div>
         </form>
     </main>
