@@ -1,0 +1,40 @@
+@import url('style.css');
+.password-strength-meter {
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 2px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.password-strength-meter::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-weak .password-strength-meter::before {
+    background-color: #ff4444;
+    width: 33.33%;
+}
+
+.strength-medium .password-strength-meter::before {
+    background-color: #ffa700;
+    width: 66.66%;
+}
+
+.strength-strong .password-strength-meter::before {
+    background-color: #00c851;
+    width: 100%;
+}
+
+.password-feedback {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #666;
+}
