@@ -20,7 +20,7 @@ body {
 
 /* Header Styling */
 header {
-    background: var(--card-bg);
+    background: rgba(228, 30, 38, 1);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -33,11 +33,11 @@ header {
 
 .headerGroup button {
     padding: 0.5rem;
-    font-size: 1.25rem;
-    border-radius: 12px;
+    font-size: 1rem;
+    border-radius: 50%;
     border: none;
     cursor: pointer;
-    background-color: var(--primary-light);
+    background-color: var(--bg-color);
     color: var(--primary-color);
     margin-left: 1rem;
     transition: all 0.2s ease;
