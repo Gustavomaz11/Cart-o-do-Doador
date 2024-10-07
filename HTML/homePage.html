@@ -1,50 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão do Doador | HEMOSE</title>
     <link rel="stylesheet" href="../CSS/homePage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="../JS/homePage.js" defer></script>
 </head>
-<body>
-    <header>
-        <img src="../img/logo_1_1-removebg-preview.png" alt="logoFSPH" height="auto" width="190rem">
-        <div class="headerGroup">
-            <button><i class="bi bi-bell-fill"></i></button>
-            <button><i class="bi bi-person-circle"></i></button>
-        </div>
-    </header>
 
-    <section>
-        <div class="cardDoador">
-            <div class="cardGroup">
-                <span>001</span>
-                <span>AB-</span>
+<body>
+    <div class="container">
+        <section>
+            <div class="cardDoador">
+                <div class="cardGroup">
+                    <span>001</span>
+                    <span class="blood-badge">AB-</span>
+                </div>
+                <hr />
+                <div class="cardGroup">
+                    <span>Gustavo Machado Trindade</span>
+                </div>
+                <hr />
+                <div class="cardGroup">
+                    <h5>Data de Nascimento: <span>18/10/1995</span></h5>
+                </div>
+                <div class="cardGroup">
+                    <h5>Nome da Mãe: <span>Josevanda Machado Trindade</span></h5>
+                </div>
+                <div class="cardGroup">
+                    <h5>Doador desde: <span>27/08/2014</span></h5>
+                </div>
+                <div class="cardGroup">
+                    <h5>Doações em 12 meses: <span>5 doações</span></h5>
+                </div>
             </div>
-            <hr/>
-            <div class="cardGroup">
-                <span>Gustavo Machado Trindae</span>
+        </section>
+
+        <section>
+            <h3>Próxima doação</h3>
+            <div class="next-donation">
+                <i class="bi bi-calendar-check"></i>
+                <span>xx/xx/xxxx</span>
             </div>
-            <hr/>
-            <div class="cardGroup">
-                <h5>Data de Nascimento: <span>18/10/1995</span></h5>
-                <h5>Nome da Mãe: <span>Josevanda Machado Trindade</span></h5>
+
+            <div class="groupBtn">
+                <button><i class="bi bi-heart-fill"></i>Doações</button>
+                <button><i class="bi bi-file-earmark-text"></i>Certificado</button>
+                <button><i class="bi bi-calendar"></i>Agendamentos</button>
             </div>
-            <div class="cardGroup">
-                <h5>Doador desde: <span>27/08/2014</span></h5>
-                <h5>Doações em 12 meses: <span>5 doações</span></h5>
+        </section>
+        <section class="estoque">
+
+            
+            <h3>Estoque de Sangue</h3>
+            <div class="blood-stock">
+                <div class="blood-type">
+                    <span>A+</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="80"></div>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <span>A-</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="30"></div>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <span>B+</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="60"></div>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <span>B-</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="20"></div>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <span>AB+</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="45"></div>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <span>AB-</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="15"></div>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <span>O+</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="blood-type">
+                    <span>O-</span>
+                    <div class="blood-bar">
+                        <div class="blood-level" data-level="40"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <h3 style="display: flex; justify-content: space-between;">Próxima doação: <span>xx/xx/xxxx</span></h3>
-    </section>
-    <div class="groupBtn">
-        <button>Doações</button>
-        <button>Certificado</button>
-        <button>Agendamento</button>
+            
+        </section>
+        <section>
+            <div class="slideShow" id="slideshow">
+                <div class="slide active">Notícia 1: Lorem ipsum dolor sit amet.</div>
+                <div class="slide">Notícia 2: Consectetur adipiscing elit.</div>
+                <div class="slide">Notícia 3: Sed do eiusmod tempor incididunt.</div>
+            </div>
+        </section>
+        
     </div>
-    
+
 </body>
+
 </html>
