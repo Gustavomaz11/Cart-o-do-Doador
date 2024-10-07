@@ -1,0 +1,62 @@
+@import url('style.css');
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+header {
+    background: rgba(228, 30, 38, 0.7);
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerGroup button {
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: rgb(228, 30, 38);
+    transition: .3s ease-in-out;
+}
+
+.headerGroup button:hover {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(245,245,245,0.5);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(245,245,245,0.5);
+    box-shadow: 0px 0px 6px 0px rgba(245,245,245,0.5);
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+}
+
+.cardGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    margin-top: .8rem;
+}
+
+.groupBtn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupBtn button {
+    margin-right: .5rem;
+    padding: .3rem;
+}
