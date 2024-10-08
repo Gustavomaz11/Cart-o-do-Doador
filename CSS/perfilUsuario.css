@@ -225,7 +225,7 @@ body {
     margin-top: 5px;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .profile-container {
         box-shadow: none;
     }
@@ -242,4 +242,4 @@ body {
     .stats-container {
         grid-template-columns: 1fr;
     }
-}
+} */
