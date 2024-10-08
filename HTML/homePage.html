@@ -1,127 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal do Doador | HEMOSE</title>
-    <link rel="stylesheet" href="../CSS/homePage.css">
+    <title>InstaBlood</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/homePage.css">
     <script src="../JS/homePage.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <img src="../img/logo_1_1-removebg-preview.png" alt="logoFSPH" height="auto" width="190rem">
-        <div class="headerGroup">
-            <button><i class="bi bi-bell-fill"></i></button>
-            <a href="perfilUsuario.html"><button><i class="bi bi-person-circle"></i></button></a>
+    <div class="app-container">
+        <div class="header">
+            <div class="logo">
+                <i class="bi bi-droplet-fill"></i>
+                Portal do Doador
+            </div>
+            <i class="bi bi-bell notification-icon"></i>
         </div>
-    </header>
-    <div class="container">
-        <section>
-            <div class="cardDoador">
-                <div class="cardGroup">
-                    <span>001</span>
-                    <span class="blood-badge">AB-</span>
-                </div>
-                <hr />
-                <div class="cardGroup">
-                    <span>Gustavo Machado Trindade</span>
-                </div>
-                <hr />
-                <div class="cardGroup">
-                    <h5>Data de Nascimento: <span>18/10/1995</span></h5>
-                </div>
-                <div class="cardGroup">
-                    <h5>Nome da Mãe: <span>Josevanda Machado Trindade</span></h5>
-                </div>
-                <div class="cardGroup">
-                    <h5>Doador desde: <span>27/08/2014</span></h5>
-                </div>
-                <div class="cardGroup">
-                    <h5>Doações em 12 meses: <span>5 doações</span></h5>
-                </div>
-            </div>
-        </section>
 
-        <section>
-            <h3>Próxima doação</h3>
-            <div class="next-donation">
-                <i class="bi bi-calendar-check"></i>
-                <span>25/01/2025</span>
+        <div class="user-info">
+            <img src="../img/Imagem do WhatsApp de 2024-10-08 à(s) 00.53.23_3f978e83.jpg" alt="imagem-perfil" class="avatar">
+            <div class="welcome-text">
+                <div class="secondary-text">Bem Vindo,</div>
+                <div class="bold-text">Gustavo</div>
             </div>
+            <div class="location">
+                <i class="bi bi-geo-alt-fill"></i>
+                Aracaju, Sergipe
+            </div>
+        </div>
 
-            <div class="groupBtn">
-                <button id="doacoesBtn"><i class="bi bi-heart-fill"></i>Minha Doação</button>
-                <button id="certificadoBtn"><i class="bi bi-file-earmark-text"></i>Gerar Certificado de Doador</button>
-                <button id="agendamentosBtn"><i class="bi bi-calendar"></i>Agendamentos</button>
+        <div class="action-cards">
+            <div class="action-card">
+                <div class="stat-circle regeneration-circle">100%</div>
+                <div class="stat-label">Regeneração</div>
+                <div class="small-text">Px. Doação: <span>05/11/2024</span></div>
             </div>
-        </section>
-        <section class="estoque">
-            <h3>Estoque de Sangue</h3>
-            <div class="blood-stock">
-                <div class="blood-type">
-                    <span>A+</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="80"></div>
-                    </div>
+            <div class="action-card" id="doarSangue">
+                <div class="action-icon donate">
+                    <img src="../img/historido.jpg" alt="Donate blood" width="60px" height="auto">
                 </div>
-                <div class="blood-type">
-                    <span>A-</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="30"></div>
-                    </div>
+                <div class="bold-text">Doar Sangue</div>
+            </div>
+        </div>
+
+        <div class="donor-card">
+            <div class="donor-header">
+                <span class="donor-id">123456789</span>
+                <div class="donor-headerImg">
+                    <img src="../img/logo_hemose.png" alt="fsphbranco" width="60px" height="auto">
+                    <img src="../img/Logo governo Preto.png" alt="logoGov" width="60px" height="auto">
                 </div>
-                <div class="blood-type">
-                    <span>B+</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="60"></div>
-                    </div>
-                </div>
-                <div class="blood-type">
-                    <span>B-</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="20"></div>
-                    </div>
-                </div>
-                <div class="blood-type">
-                    <span>AB+</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="45"></div>
-                    </div>
-                </div>
-                <div class="blood-type">
-                    <span>AB-</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="15"></div>
-                    </div>
-                </div>
-                <div class="blood-type">
-                    <span>O+</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="90"></div>
-                    </div>
-                </div>
-                <div class="blood-type">
-                    <span>O-</span>
-                    <div class="blood-bar">
-                        <div class="blood-level" data-level="40"></div>
-                    </div>
-                </div>
+            </div>
+            <div class="nameDonateCard">Gustavo Machado Trindade <span>AB-</span></div>
+            <div class="informationCard">
+                <h3>CPF:<span class="donor-detail">075.081.545.09</span></h3>
+                <h3>Data de Nascimento:<span class="donor-detail">18/10/1995</span></h3>
+                <h3>Doador desde:<span class="donor-detail">15/06/2014</span></h3>
+            </div>
+            <div class="cartao">
+                <h6>Cartão do Doador</h6>
             </div>
             
-        </section>
-        <section>
-            <div class="slideShow" id="slideshow">
-                <div class="slide active">Notícia 1: Lorem ipsum dolor sit amet.</div>
-                <div class="slide">Notícia 2: Consectetur adipiscing elit.</div>
-                <div class="slide">Notícia 3: Sed do eiusmod tempor incididunt.</div>
+        </div>
+
+        <div class="stats-container">
+            <div class="action-card">
+                <div class="action-icon request" id="historico">
+                    <img src="../img/doar.jpg" alt="Request blood" width="60px" height="auto">
+                    
+                </div>
+                <div class="bold-text">Histórico</div>
             </div>
-        </section>
+            <div class="action-card">
+                <div class="action-icon request">
+                    <div class="blood-type-stat">15</div>
+                </div>
+                <div class="bold-text">Doações</div>
+            </div>
+            <div class="action-card" id="certificados">
+                <div class="action-icon request">
+                    <div class="blood-type-stat"><i class="bi bi-star-fill"></i></div>
+                </div>
+                <div class="bold-text" >Certificados</div>
+            </div>
+        </div>
         
     </div>
-
 </body>
-
 </html>

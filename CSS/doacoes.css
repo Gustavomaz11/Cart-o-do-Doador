@@ -1,36 +1,6 @@
 @import url('style.css');
 @import url('homePage.css');
 
-header {
-    background: rgba(228, 30, 38, 1);
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.headerGroup button {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    margin-left: 1rem;
-    transition: all 0.2s ease;
-    background-color: #fff;
-}
-
-.headerGroup button:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-}
 
 .timeline {
     max-width: 600px;
