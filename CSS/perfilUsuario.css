@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.profile-container {
+    max-width: 430px;
+    margin: 0 auto;
+    background: white;
+    height: 100vh;
+    position: relative;
+}
+
+.top-bar {
+    background-color: #e31e24;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-header {
+    background-color: #e31e24;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile-image {
+    
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-occupation {
+    margin-top: 5px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.action-button {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.chat-button {
+    background-color: #25D366;
+    color: white;
+}
+
+.call-button {
+    background-color: #0088cc;
+    color: white;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e31e24;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-size: 16px;
+}
+
+.donation-history {
+    padding: 20px;
+}
+
+.history-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.history-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #e31e24;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.history-info {
+    flex-grow: 1;
+}
+
+.history-date {
+    font-weight: 500;
+}
+
+.history-details {
+    font-size: 14px;
+    color: #666;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.nav-item {
+    color: #666;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-item.active {
+    color: #e31e24;
+}

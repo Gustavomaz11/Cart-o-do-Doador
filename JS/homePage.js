@@ -46,3 +46,22 @@ document.getElementById('slideshow').addEventListener('mouseover', stopSlideShow
 document.getElementById('slideshow').addEventListener('mouseout', startSlideShow);
 
 startSlideShow();
+
+
+const doacoesBtn = document.querySelector('#doacoesBtn')
+const certificadoBtn = document.querySelector('#certificadoBtn')
+const agendamentosBtn = document.querySelector('#agendamentosBtn')
+
+const listaBtnHomePage = [doacoesBtn, certificadoBtn, agendamentosBtn]
+
+const listaUrlHomePage = [
+    'doacoes.html',
+    'certificados.html',
+    'agendamentos.html'
+]
+
+for(let x = 0; x < listaBtnHomePage.length; x++) {
+    listaBtnHomePage[x].addEventListener('click', () => {
+        window.location.href = listaUrlHomePage[x]
+    })
+}
