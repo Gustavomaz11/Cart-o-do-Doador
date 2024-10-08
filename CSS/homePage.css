@@ -155,8 +155,30 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     height: 190px;
+    transition: all 0.3s ease; /* Transição suave */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    position: relative; /* Para o botão de impressão */
     
     
+}
+
+.donor-card.expanded {
+    position: fixed; /* Fixa o cartão na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background: white; /* Fundo branco para a leitura */
+    z-index: 1000; /* Fica acima dos outros elementos */
+    overflow: auto; /* Permite rolagem se necessário */
+}
+
+.print-option {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o botão */
+    display: none; /* Inicialmente oculto */
 }
 
 h3 {
@@ -273,4 +295,53 @@ h3 {
 
 .small-text span {
     font-weight: normal;
+}
+
+.donor-card.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.print-option {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.donor-card.fullscreen .print-option {
+    display: block;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .donor-card, .donor-card * {
+        visibility: visible;
+    }
+    .donor-card {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .print-option {
+        display: none !important;
+    }
 }
