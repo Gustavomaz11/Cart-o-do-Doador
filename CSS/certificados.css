@@ -31,3 +31,19 @@ header {
     transform: translateY(-2px);
 }
 
+.btnCertificado {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btnCertificado button {
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(228, 30, 38, 1);
+    color: #fff;
+    font-weight: bold;
+
+}
+
